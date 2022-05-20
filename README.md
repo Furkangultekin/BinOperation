@@ -6,7 +6,8 @@ It is a basic django backend project named BinOperation for Bins and Operaitons.
 - Project Set-up
 - Django Application
 - REST api requests and responses
-- Suggestions
+- Models
+- ER diagram
 
 ## Project Set-up
 
@@ -143,10 +144,27 @@ $ python manage.py runserver
  ]                                            
 ```
 
+## Models
 
+### Bin
+| bin_id        | PK         |
+|:------------- | :--------- |
+| latitude      | FloatField |
+| longitude     | FloatField |
 
+### Operation
+| operation_id  | PK           |
+|:------------- | :----------- |
+| name          | CharField    |
 
+### BinOperation
+| bin_id               | FK            |
+|:-------------        | :---------    |
+| Operation_id         | FK            |
+| collection_frequency | IntegerField  |
+| last_collection      | DatetimeField |
 
+## ER diagram
 
 
 

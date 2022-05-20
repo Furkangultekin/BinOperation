@@ -158,16 +158,15 @@ $ python manage.py runserver
 | name          | CharField    |
 
 ### BinOperation
-| bin_id               | FK            |
+| bin                  | FK            |
 |:-------------        | :---------    |
-| Operation_id         | FK            |
+| operation            | FK            |
 | collection_frequency | IntegerField  |
 | last_collection      | DatetimeField |
 
 ## ER diagram
 
-
-
+![BinOperation](https://user-images.githubusercontent.com/48828422/169428855-5b17df32-419f-44fa-804c-b78c844bb9e6.png)
 
 
 
